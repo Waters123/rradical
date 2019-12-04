@@ -1,0 +1,301 @@
+
+
+.form-title{
+
+  font-size: 4.6rem;
+  color: #27376c;
+  position: relative;
+  @media only screen and (max-width: 750px){
+    margin: 5%;
+    }
+
+  &::after{
+    content: ".";
+    position: absolute;
+    color:red;
+
+
+
+
+  }
+
+
+}
+
+.form{
+ &__group{
+  width: 100%;
+  position: relative;
+
+  @media only screen and (max-width: 750px){
+
+    max-width: 90%;
+    }
+
+ }
+
+ &__error{
+   color: red;
+   display: block;
+   padding: .5rem 0;
+ }
+
+ &__input{
+
+  font-size:1.5rem;
+  font-family: inherit;
+  padding: 2rem 0;
+  border-radius:2px;
+  background-color:white;
+  border: none;
+  border-bottom: 1px solid #c5c5c5;
+  width: 100%;
+
+
+ }
+
+  &__input:focus{
+   outline: none;
+   border-bottom: 1px solid #ec008c;
+
+
+
+   &::-webkit-input-placeholder{
+    color:black;
+
+
+
+
+   }
+
+
+   &:focus:invalid{
+    border-bottom: 1px solid red;
+
+   }
+
+  }
+  &__label{
+    color: #454545;
+    position: absolute;
+    font-size: 2rem;
+    display: block;
+    transform: all .3s;
+    top:1.1rem;
+    transition: all .2s;
+    span{
+      color: red;
+    }
+
+   }
+
+   &__input:focus + &__label{
+    top: -1rem;
+    font-size: 1.5rem;
+    left: 0;
+
+   }
+
+   &__input:placeholder-shown + &__label{
+
+    top: -1rem;
+    font-size: 1.5rem;
+    left: 0;
+
+    }
+
+
+
+}
+
+.label-avtive{
+  top: -1rem;
+  font-size: 1.5rem;
+  left: 0;
+}
+
+footer{
+  box-shadow: inset 0 0.1rem 0.2rem 0 #dedede;
+    background: #f8f8f8;
+    padding: 5.5rem 0 0;
+}
+
+.footer-company{
+ &__name{
+  color: #797979;
+  font-size: 1.4rem;
+  margin-bottom: .6rem;
+  font-weight: 600;
+  @media only screen and (max-width: 750px){
+    text-align: center;
+
+    }
+ }
+
+ &__address{
+  margin-bottom: 2rem;
+  color: #797979;
+  font-size: 1.1rem;
+  font-weight: 400;
+  @media only screen and (max-width: 750px){
+    text-align: center;
+
+    }
+ }
+
+ &__meta{
+   display: flex;
+   @media only screen and (max-width: 750px){
+    justify-content: center;
+
+    }
+   div{
+     margin-right: 2rem;
+   }
+  a{
+    text-decoration: none;
+    color: #ec008c;
+    font-weight: 600;
+    font-size: 1.3rem;
+    span{
+      svg{
+         width: 1.3rem;
+         margin-right: 1rem;
+
+      }
+
+    }
+  }
+
+ }
+
+}
+
+.footer-media{
+    width: 100%;
+  &__text{
+    color: #797979;
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+    width: 100%;
+    text-align: right;
+    @media only screen and (max-width: 750px){
+      text-align: center;
+      margin-top: 2rem;
+      }
+
+}
+
+
+
+  &__icons{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    @media only screen and (max-width: 750px){
+      justify-content: center;
+      }
+
+
+    li:not(:last-child){
+      margin-right: .8rem;
+    }
+
+  li{
+    list-style: none;
+    a{ span{
+       svg{
+        width: 3.7rem;
+        height: 3.7rem;
+       }
+
+    }
+
+    }
+  }
+
+  }
+
+}
+
+.newsletter{
+  margin: 5rem 0 0;
+  background: linear-gradient(180deg,#f8f8f8 50%,#27376c 0);
+
+}
+
+.newsletter-box{
+  @media only screen and (max-width: 750px){
+    flex-wrap: wrap;
+    }
+
+  display: flex;
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  padding: 3.5rem 4.5rem;
+  background-color:#fff;
+  align-items: center;
+
+  &__icon{
+    position: absolute;
+    left: -1.2rem;
+    top: 3rem;
+    width: 3rem;
+
+  }
+
+  &__headline{
+    color: #27376c;
+    font-size: 2.2rem;
+    line-height: 1.7rem;
+
+    &::after{
+      content: ".";
+    color: #ec008c;
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 0;
+
+    }
+
+  }
+
+
+  &__paragraph{
+    color: #454545;
+
+    margin: 0;
+    font-size: 1.4rem;
+    margin-top: 1.7rem;
+
+
+  }
+
+ &__form{
+   display: flex;
+   @media only screen and (max-width: 999px){
+    flex-wrap: wrap;
+    }
+ }
+
+
+}
+
+.btn-container{
+  align-self: center;
+}
+
+.legal{
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #454545;
+  a{
+    text-decoration: none;
+    text-decoration: underline;
+    color: #ec008c;
+    font-weight: 600;
+
+  }
+}

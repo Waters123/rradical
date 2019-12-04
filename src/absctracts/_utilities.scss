@@ -1,0 +1,157 @@
+.btn{
+  color: #fff;
+    background: #ec008c;
+    box-shadow: 0 6px 18px rgba(236,6,142,.35);
+    border: 0;
+    padding: 2rem 2.7rem 1.85rem;
+    outline: 0;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border-radius: 4rem;
+    font-weight: 600;
+     padding: 1.3rem 2.3rem 1.15rem;
+
+    align-items: center;
+
+    &__svg-container{
+
+      line-height: 0;
+    }
+
+    &__svg{
+      width: 1.2rem;
+      margin-left: 1rem;
+    }
+
+  }
+
+
+.container {
+  margin: 0 auto;
+  width: 120rem;
+  @include respond(tab-land) {
+    width: 100rem;
+  }
+  @include respond(tab-port) {
+    width: 70rem;
+
+
+  }
+
+  @include respond(phone) {
+    width: 45rem;
+	}
+}
+
+.row{
+  display: flex;
+  @media only screen and (max-width: 999px){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+    }
+
+
+
+}
+
+
+
+.col-1-of-4{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex: 0 0 25%;
+  max-width: 25%;
+  @media only screen and (max-width: 999px){
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem;
+
+
+    }
+
+    @include respond(phone) {
+      flex: 0 0 46%;
+      max-width: 46%;
+    }
+
+
+
+
+}
+
+
+
+
+.col-1-of-3{
+  display: flex;
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  @media only screen and (max-width: 750px){
+    flex: 0 0 90%;
+    max-width: 90%;
+    }
+
+}
+.col-md{
+  flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%;
+
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  @media only screen and (max-width: 750px){
+    flex: 0 0 90%;
+    max-width: 90%;
+    }
+}
+.col-large{
+  display: flex;
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  @media only screen and (max-width: 750px){
+    flex: 0 0 90%;
+    max-width: 90%;
+    }
+}
+
+.col-1-of-2{
+  flex: 0 0 50%;
+  max-width: 50%;
+  display: flex;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  @media only screen and (max-width: 750px){
+    flex: 0 0 90%;
+    max-width: 90%;
+    }
+
+}
+.col-wrap{
+
+ display: flex;
+ flex-wrap: wrap;
+ width: 100%;
+
+}
+
+.form-padding-md{
+ padding: 5rem 0 !important;
+}
+
+.margin-right-sm{
+  margin-right: 5rem;
+}
+
+.col-sm{
+  @media only screen and (max-width: 999px){
+    flex: 0 0 100%;
+    margin-bottom: 2rem;
+    }
+}

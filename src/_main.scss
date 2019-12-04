@@ -1,0 +1,32 @@
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*:link,
+*:visited,
+* {
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+  font-family: "Livvic", sans-serif;
+
+
+	@include respond(big-desktop) {
+		font-size: 75%;
+	}
+
+
+}
+
+body {
+	line-height: 1.6;
+	font-family: inherit;
+}
+

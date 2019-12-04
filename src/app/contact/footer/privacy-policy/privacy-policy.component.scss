@@ -1,0 +1,52 @@
+.rights{
+  background: #27376c;
+  padding: 4.3rem 0;
+}
+.footer-rights{
+ p{
+  color: #7d8bbc;
+  font-size: 1.5rem;
+  line-height: 1.471;
+ }
+
+ &__menu{
+   margin-top: 2rem;
+   display: flex;
+   li{
+
+
+    &:not(:first-child){
+      padding: 0 .5rem 0 .5rem ;
+    }
+    list-style: none;
+    position: relative;
+     a{
+      color: #7d8bbc;
+      padding-right: 1.3rem;
+      font-size: 1.4rem;
+      text-decoration: none;
+      &:hover{
+        color:#f24aad;
+      }
+     }
+
+     &:not(:first-child):before{
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      -webkit-transform: translate(-50%,-50%);
+      transform: translate(-50%,-50%);
+      width: .3rem;
+      height: .3rem;
+      background: #7d8bbc;
+      border-radius: 50%;
+
+     }
+   }
+
+ }
+
+
+}
